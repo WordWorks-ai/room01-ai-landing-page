@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0E1116" />
+  <title>Room01 — always-on agent appliance governed by room0</title>
+  <meta name="description" content="Room01 is a message-first Mac mini appliance for always-on personal agents. Room0 is the authority substrate: policy, tool gateway, and receipts. Vision stage — collaborators welcome." />
+  <meta property="og:title" content="Room01 — always-on agent appliance governed by room0" />
+  <meta property="og:description" content="Message-first Mac mini appliance for always-on agents. Room0 defines the rules, enforces the boundary, and leaves receipts." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og.png" />
+  <meta property="og:url" content="https://room01.ai/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/room01-icon-mono-white.svg" alt="" class="brand-mark-img" loading="eager" decoding="async"/></span>
+        <span class="brand-name">room01 <span class="muted">/ room0</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks">
+          <span class="sr-only">Open menu</span>
+          <span class="burger" aria-hidden="true"></span>
+        </button>
+        <div id="navlinks" class="nav-links">
+          <a href="#what">What</a>
+          <a href="#room0">Room0</a>
+          <a href="#how">How</a>
+          <a href="#collaborate">Collaborate</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </nav>
+
+      <div class="header-cta">
+        <a class="btn btn-ghost" href="#join">Join</a>
+        <a class="btn btn-primary" href="https://github.com/wordworks-ai/room01-ai-landing-page" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="kicker"><span class="dot"></span> Vision stage · Built in public</p>
+
+          <h1>Room01</h1>
+
+          <p class="lead">
+            A <b>message-first</b> Mac mini appliance for <b>always-on</b> personal agents.
+            You don’t open a new app — you message it through what you already use:
+            iMessage, email, Discord, WhatsApp.
+          </p>
+
+          <p class="lead">
+            Under the hood, <b>room0</b> is the authority substrate:
+            it defines policies, brokers tool access, and produces receipts.
+          </p>
+
+          <p class="tagline">
+            <b>Define the rules.</b> <span style="color: var(--muted2);">Enforce the boundary. Authority at the substrate.</span>
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#join">Join the build list</a>
+            <a class="btn btn-ghost" href="room0/">Read Room0 overview</a>
+          </div>
+
+          <p class="fineprint">
+            Not for sale. This is an experiment to validate demand and recruit collaborators.
+          </p>
+        </div>
+
+        <div class="card reveal" role="region" aria-label="Example message-first interaction">
+          <div class="card-inner">
+            <div class="pill">Example <span class="mono">iMessage</span></div>
+            <div class="hr"></div>
+
+            <div class="thread" aria-label="Example conversation">
+              <div class="bubble bubble-you">
+                <div class="bubble-meta">You</div>
+                <div class="bubble-text">Room01 — summarize this thread and draft a reply. Draft only.</div>
+              </div>
+
+              <div class="bubble bubble-room">
+                <div class="bubble-meta">Room01</div>
+                <div class="bubble-text">
+                  I’ll summarize the thread, draft two reply options, and show them before anything is sent.
+                </div>
+              </div>
+            </div>
+
+            <div class="mini" aria-label="Policy and receipt">
+              <div class="mini-row">
+                <div class="mini-label">Tools</div>
+                <div class="mini-value mono">email.read · email.draft</div>
+              </div>
+              <div class="mini-row">
+                <div class="mini-label">Policy</div>
+                <div class="mini-value"><span class="pill" style="padding:4px 10px;">Ask</span> Preview before execute</div>
+              </div>
+              <div class="mini-row">
+                <div class="mini-label">Receipt</div>
+                <div class="mini-value mono">a9f1c3e7</div>
+              </div>
+            </div>
+
+            <p class="fineprint" style="margin-top:12px;">
+              Most interaction is message-first. An admin console exists for advanced configuration — optional.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="what" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>What it is</h2>
+          <p>
+            Room01 is the client experience. Room0 is the platform underneath.
+            Together, they aim to make powerful agents safer to run — without killing usefulness.
+          </p>
+        </div>
+
+        <div class="grid">
+          <div class="item reveal">
+            <h3>Always-on appliance</h3>
+            <p>A dedicated Mac mini you plug in and leave running 24/7.</p>
+          </div>
+          <div class="item reveal">
+            <h3>Message-first interface</h3>
+            <p>Use the channels you already live in. No “assistant app” required.</p>
+          </div>
+          <div class="item reveal">
+            <h3>Governed tool access</h3>
+            <p>Policies + receipts live in room0 — so you can inspect and revoke.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="room0" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Room0: authority substrate for autonomous systems</h2>
+          <p>
+            Room0 is intentionally boring. It’s where the rules live — and where tool access is enforced.
+            The goal: fail closed by default, with clear boundaries.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="item reveal">
+            <h3>Room01 sits inside Room0</h3>
+            <p>
+              Room01 handles messaging, routing, and the user experience.
+              Room0 handles policy, tool gateway, receipts, and governance.
+            </p>
+            <p style="margin-top:10px;">
+              <a class="link" href="room0/">Read the Room0 overview →</a>
+            </p>
+          </div>
+
+          <div class="item reveal">
+            <h3>Taglines (draft)</h3>
+            <p style="margin:0 0 6px;"><b>Define the rules.</b></p>
+            <p style="margin:0 0 6px;"><b>Enforce the boundary.</b></p>
+            <p style="margin:0;"><b>Authority at the substrate.</b></p>
+          </div>
+        </div>
+
+        <div class="diagram reveal" aria-label="Authority substrate diagram">
+          <img src="assets/authority_substrate_diagram.svg" alt="Diagram: Autonomous agents above room0 authority substrate above machine / OS / hardware" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p>
+            A simple contract: intent is visible, access is scoped, and actions leave receipts.
+          </p>
+        </div>
+
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <b>You message Room01</b>
+              <p>“Draft this.” “Schedule that.” “Monitor this.” “Summarize that.”</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <b>The agent proposes an action</b>
+              <p>Room01 makes the plan and tool requests explicit: what it wants to do, and why.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <b>Room0 enforces policy</b>
+              <p>Ask / allow / block — and produce a receipt you can audit later.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="collaborate" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Collaborate</h2>
+          <p>
+            If this idea resonates, participation is the best signal. Even “here’s my use case” helps.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="item reveal">
+            <h3>Share your use case</h3>
+            <p>What would you trust a 24/7 agent to do if it had boundaries and receipts?</p>
+            <p style="margin-top:10px;">
+              <a class="link" href="https://github.com/wordworks-ai/room01-ai-landing-page/issues/new" target="_blank" rel="noreferrer">Open a use-case issue →</a>
+            </p>
+          </div>
+
+          <div class="item reveal">
+            <h3>Contribute policy + security thinking</h3>
+            <p>Connector boundaries, permission ergonomics, threat models, and receipt formats.</p>
+            <p style="margin-top:10px;">
+              <a class="link" href="https://github.com/wordworks-ai/room01-ai-landing-page/discussions" target="_blank" rel="noreferrer">Start a discussion →</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="section">
+      <div class="container">
+        <div class="join">
+          <div class="section-head" style="margin-bottom:0;">
+            <h2>Join the build list</h2>
+            <p>
+              Occasional updates, RFC drops, and invites to early pilots if this becomes real.
+              Collaborators will be first to know if we explore funding paths.
+            </p>
+            <p class="fineprint">No spam. No selling your email. You can bail anytime.</p>
+          </div>
+
+          <form class="card form reveal" method="post" action="https://formspree.io/f/REPLACE_ME">
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" autocomplete="email" placeholder="you@domain.com" required />
+            </label>
+
+            <label>
+              <span>Preferred channels</span>
+              <textarea name="channels" placeholder="iMessage, email, Discord, WhatsApp…"></textarea>
+            </label>
+
+            <label>
+              <span>Your first use case</span>
+              <textarea name="use_case" placeholder="Inbox triage, scheduling, research, monitoring…"></textarea>
+            </label>
+
+            <label class="checkbox">
+              <input name="collab" type="checkbox" value="yes">
+              <span>I’m open to collaborating (design, code, security, integrations)</span>
+            </label>
+
+            <button class="btn btn-primary" type="submit">Join</button>
+            <p class="fineprint">Replace the Formspree endpoint in <span class="mono">index.html</span>.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>FAQ</h2>
+        </div>
+
+        <div class="grid-2">
+          <div class="item reveal">
+            <details>
+              <summary>Is this a product I can buy today?</summary>
+              <p>No — this is a vision-stage experiment. If it becomes real, early collaborators and build-list folks will hear first.</p>
+            </details>
+          </div>
+
+          <div class="item reveal">
+            <details>
+              <summary>Do I need to install a new app?</summary>
+              <p>The intention is no. Room01 is message-first. An admin console exists for advanced configuration — optional.</p>
+            </details>
+          </div>
+
+          <div class="item reveal">
+            <details>
+              <summary>What’s the difference between room0 and room01?</summary>
+              <p><b>room0</b> is the governance kernel (policy, tool gateway, receipts). <b>room01</b> is the client experience running on top.</p>
+            </details>
+          </div>
+
+          <div class="item reveal">
+            <details>
+              <summary>Why a dedicated Mac mini?</summary>
+              <p>A stable always-on runtime, a predictable environment, and a smaller blast radius than your daily computer.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-note">
+        <b>room01.ai</b> · <span class="js-year"></span><br/>
+        Room01 is a concept. Room0 is the platform vision. Built in public.
+      </div>
+
+      <div class="footer-links">
+        <a href="room0/">Room0</a>
+        <a href="https://github.com/wordworks-ai/room01-ai-landing-page" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="#join">Build list</a>
+      </div>
+
+      <div class="copyright">
+        © <span class="js-year"></span> WordWorks AI, LLC
+      </div>
+
+</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0E1116" />
+  <title>room0 — authority substrate for autonomous systems</title>
+  <meta name="description" content="room0 is the governance kernel behind room01: policy engine, tool gateway, receipts, and versioned contracts for running tool-using agents on an appliance." />
+
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="../assets/room01-icon-mono-white.svg" alt="" class="brand-mark-img" loading="eager" decoding="async"/></span>
+        <span class="brand-name">room0 <span class="muted">/ platform</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="btn btn-ghost" href="../">Back to Room01</a>
+        <a class="btn btn-primary" href="https://github.com/WORDWORKS-ORG/room01" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" style="padding-bottom: 40px;">
+      <div class="container">
+        <p class="kicker"><span class="dot"></span> Platform overview · Draft</p>
+        <h1>room0</h1>
+        <p class="lead" style="max-width: 860px;">
+          room0 is the authority substrate: a governance kernel for tool-using agents.
+          It exists to define boundaries, enforce policy, and leave receipts — so always-on assistants can be run with less risk.
+        </p>
+        <p class="tagline"><b>Define the rules.</b> <span style="color: var(--muted2);">Enforce the boundary. Fail closed by default.</span></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <div class="item reveal">
+            <h3>Core components (draft)</h3>
+            <p style="margin:0 0 10px; color: var(--muted);">
+              The boring parts that make everything else possible:
+            </p>
+            <ul style="margin:0; padding-left: 18px; color: var(--muted);">
+              <li><b>Policy engine</b>: ask / allow / block, contextual rules, per-agent scopes</li>
+              <li><b>Tool gateway</b>: proxy tools, scope tokens, throttle usage, enforce policy</li>
+              <li><b>Receipts</b>: structured logs of actions and data access; searchable history</li>
+              <li><b>Contracts</b>: versioned interfaces so agents integrate without chaos</li>
+            </ul>
+          </div>
+
+          <div class="item reveal">
+            <h3>Governance direction (draft)</h3>
+            <p style="margin:0 0 10px; color: var(--muted);">
+              A shared model for how power is granted:
+            </p>
+            <ul style="margin:0; padding-left: 18px; color: var(--muted);">
+              <li>RFCs for new tools, permissions, and high-risk capabilities</li>
+              <li>Reviewable defaults that assume least privilege</li>
+              <li>Clear connector boundaries (read vs write; draft vs send)</li>
+            </ul>
+            <p class="fineprint" style="margin-top: 10px;">
+              This is intent, not a claim about what already exists.
+            </p>
+          </div>
+        </div>
+
+        <div class="diagram reveal" style="margin-top: 16px;">
+          <img src="../assets/authority_substrate_diagram.svg" alt="Diagram: Autonomous agents above room0 authority substrate above machine / OS / hardware" loading="lazy">
+        </div>
+
+        <div class="item reveal" style="margin-top: 14px;">
+          <h3>Brand guide</h3>
+          <p style="margin:0; color: var(--muted);">
+            Want to contribute UI/docs? The current brand guide is included in this repo:
+            <a class="link" href="../brand/Room0_Brand_Guide.pdf">Room0_Brand_Guide.pdf</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-note">
+        <b>room0</b> · <span class="js-year"></span><br/>
+        Platform overview for room01.ai
+      </div>
+
+      <div class="footer-links">
+        <a href="../">Room01</a>
+        <a href="https://github.com/WORDWORKS-ORG/room01" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+
+      <div class="copyright">
+        © <span class="js-year"></span> WordWorks AI, LLC
+      </div>
+
+</div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
