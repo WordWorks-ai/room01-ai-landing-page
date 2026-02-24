@@ -532,6 +532,37 @@ details p{ margin-top: 10px; color: var(--muted); }
   .header-cta{ display:none; }
 }
 
+@media (max-width: 640px){
+  .container{ width:min(var(--max), calc(100% - 28px)); }
+  .header-inner{ padding: 12px 0; }
+  .brand-name{ font-size: 14px; }
+
+  .hero{ padding: 58px 0 42px; }
+  .lead{ font-size: 16px; }
+  .section{ padding: 48px 0; }
+  .section-head p{ font-size: 15px; }
+
+  .card-inner{ padding: 14px; }
+  .mini{ padding: 10px; }
+  .mini-row{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin: 10px 0;
+  }
+  .mini-label{ width: auto; }
+
+  .hero-actions .btn{ width: 100%; }
+
+  .nav-links{
+    right: 14px;
+    max-width: calc(100vw - 28px);
+  }
+
+  .footer-links{ flex-wrap: wrap; }
+  .copyright{ text-align: left; }
+}
+
 @media (prefers-reduced-motion: reduce){
   html{ scroll-behavior:auto; }
   .reveal{ opacity:1; transform:none; transition:none; }

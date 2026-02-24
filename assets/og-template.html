@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Room01 OG Template</title>
+  <style>
+    :root{
+      --bg1: #040A16;
+      --bg2: #121B2B;
+      --panel: #101925;
+      --text: #EEF2F8;
+      --muted: rgba(238,242,248,.86);
+      --border: rgba(238,242,248,.75);
+      --accent: #6BA8FF;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      font-family: Inter, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(640px 360px at 8% 96%, rgba(107,168,255,.28), transparent 68%),
+        radial-gradient(700px 340px at 95% -2%, rgba(107,168,255,.18), transparent 72%),
+        linear-gradient(140deg, var(--bg1) 0%, var(--bg2) 100%);
+    }
+    .frame{
+      position: absolute;
+      inset: 34px;
+      border-radius: 38px;
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(17,26,40,.96) 0%, rgba(15,22,34,.96) 100%);
+      box-shadow: 0 40px 90px rgba(0, 0, 0, .36);
+    }
+    .content{
+      position: absolute;
+      inset: 72px 76px;
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 44px;
+      align-items: center;
+    }
+    .logo-wrap{
+      width: 180px;
+      height: 180px;
+      border-radius: 36px;
+      border: 1px solid rgba(255,255,255,.22);
+      display: grid;
+      place-items: center;
+      background: linear-gradient(180deg, rgba(107,168,255,.08), rgba(107,168,255,.02));
+    }
+    .logo{
+      width: 132px;
+      height: 132px;
+      object-fit: contain;
+    }
+    .text h1{
+      margin: 0;
+      line-height: 1.02;
+      letter-spacing: -0.025em;
+      font-size: 92px;
+      font-weight: 850;
+    }
+    .line{
+      margin-top: 16px;
+      font-size: 40px;
+      line-height: 1.18;
+      color: var(--muted);
+      font-weight: 560;
+      max-width: 820px;
+    }
+    .tag{
+      margin-top: 26px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(107,168,255,.5);
+      background: rgba(107,168,255,.13);
+      color: var(--text);
+      font-size: 28px;
+      font-weight: 730;
+    }
+    .tag-dot{
+      width: 13px;
+      height: 13px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 8px rgba(107,168,255,.16);
+    }
+  </style>
+</head>
+<body>
+  <div class="frame"></div>
+  <div class="content">
+    <div class="logo-wrap">
+      <img class="logo" src="room01-icon-mono-white.svg" alt="" />
+    </div>
+    <div class="text">
+      <h1>Room01</h1>
+      <p class="line">Always-on personal agent appliance</p>
+      <p class="line">Message-first on iMessage, email, Discord, WhatsApp</p>
+      <div class="tag"><span class="tag-dot"></span>Governed by room0</div>
+    </div>
+  </div>
+</body>
+</html>
