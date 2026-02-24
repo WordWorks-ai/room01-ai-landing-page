@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#0E1116" />
-  <title>room0 — authority substrate for autonomous systems</title>
-  <meta name="description" content="room0 is the governance kernel behind room01: policy engine, tool gateway, receipts, and versioned contracts for running tool-using agents on an appliance." />
+  <title>room0 — authority substrate for client apps</title>
+  <meta name="description" content="room0 is the platform substrate for client apps like room01: policy enforcement, tool gateway control, receipts, and versioned contracts for trustworthy autonomous execution." />
 
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
 
@@ -29,66 +29,166 @@
 
       <nav class="nav" aria-label="Primary">
         <a class="btn btn-ghost" href="../">Back to Room01</a>
-        <a class="btn btn-primary" href="https://github.com/WORDWORKS-ORG/room01" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn btn-primary" href="https://github.com/WordWorks-ai/room0-platform" target="_blank" rel="noreferrer">Platform Repo</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" style="padding-bottom: 40px;">
+    <section class="hero">
       <div class="container">
-        <p class="kicker"><span class="dot"></span> Platform overview · Draft</p>
+        <p class="kicker"><span class="dot"></span> Platform overview · Client app substrate</p>
         <h1>room0</h1>
-        <p class="lead" style="max-width: 860px;">
-          room0 is the authority substrate: a governance kernel for tool-using agents.
-          It exists to define boundaries, enforce policy, and leave receipts — so always-on assistants can be run with less risk.
+        <p class="lead" style="max-width: 900px;">
+          room0 is the authority substrate underneath your client app. Your app owns conversation and user experience; room0 owns policy enforcement, tool boundaries, and execution receipts.
         </p>
-        <p class="tagline"><b>Define the rules.</b> <span style="color: var(--muted2);">Enforce the boundary. Fail closed by default.</span></p>
+        <p class="lead" style="max-width: 900px;">
+          Build against a stable platform contract once, then evolve channels, UX, and workflows without rebuilding the safety layer every time.
+        </p>
+        <p class="tagline"><b>Define the rules.</b> <span style="color: var(--muted2);">Enforce the boundary. Ship trustworthy autonomy.</span></p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://github.com/WordWorks-ai/room0-platform" target="_blank" rel="noreferrer">Explore room0 platform</a>
+          <a class="btn btn-ghost" href="../">See Room01 client experience</a>
+        </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="grid-2">
-          <div class="item reveal">
-            <h3>Core components (draft)</h3>
-            <p style="margin:0 0 10px; color: var(--muted);">
-              The boring parts that make everything else possible:
-            </p>
-            <ul style="margin:0; padding-left: 18px; color: var(--muted);">
-              <li><b>Policy engine</b>: ask / allow / block, contextual rules, per-agent scopes</li>
-              <li><b>Tool gateway</b>: proxy tools, scope tokens, throttle usage, enforce policy</li>
-              <li><b>Receipts</b>: structured logs of actions and data access; searchable history</li>
-              <li><b>Contracts</b>: versioned interfaces so agents integrate without chaos</li>
-            </ul>
-          </div>
-
-          <div class="item reveal">
-            <h3>Governance direction (draft)</h3>
-            <p style="margin:0 0 10px; color: var(--muted);">
-              A shared model for how power is granted:
-            </p>
-            <ul style="margin:0; padding-left: 18px; color: var(--muted);">
-              <li>RFCs for new tools, permissions, and high-risk capabilities</li>
-              <li>Reviewable defaults that assume least privilege</li>
-              <li>Clear connector boundaries (read vs write; draft vs send)</li>
-            </ul>
-            <p class="fineprint" style="margin-top: 10px;">
-              This is intent, not a claim about what already exists.
-            </p>
-          </div>
+        <div class="section-head">
+          <h2>What room0 owns</h2>
+          <p>
+            room0 is intentionally narrow: it governs capability access and execution integrity, while client apps stay focused on product experience.
+          </p>
         </div>
 
-        <div class="diagram reveal" style="margin-top: 16px;">
+        <div class="grid">
+          <div class="item reveal">
+            <h3>Policy engine</h3>
+            <p>Decides ask / allow / block with context-aware rules, capability scopes, and explicit boundary checks.</p>
+          </div>
+          <div class="item reveal">
+            <h3>Tool gateway</h3>
+            <p>Mediates connector calls behind scoped credentials so agents cannot bypass policy or overreach connector permissions.</p>
+          </div>
+          <div class="item reveal">
+            <h3>Receipts and audit trail</h3>
+            <p>Every proposed, approved, denied, and executed action leaves structured evidence your app can display and operators can verify.</p>
+          </div>
+          <div class="item reveal">
+            <h3>Versioned contracts</h3>
+            <p>Stable interfaces between app, agent runtime, and platform services so teams can move quickly without integration drift.</p>
+          </div>
+          <div class="item reveal">
+            <h3>Least-privilege defaults</h3>
+            <p>Connector boundaries are explicit: read vs write, draft vs send, propose vs execute.</p>
+          </div>
+          <div class="item reveal">
+            <h3>Fail-closed posture</h3>
+            <p>If policy cannot be evaluated or provenance cannot be recorded, the action does not execute.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>How a client app integrates with room0</h2>
+          <p>
+            room0 sits between user intent and real-world tool execution, keeping the safety boundary consistent across all channels.
+          </p>
+        </div>
+
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <b>The app captures intent</b>
+              <p>Your client experience receives a user request and translates it into a proposed action.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <b>room0 evaluates policy</b>
+              <p>room0 checks identity, context, scope, and risk posture before granting any capability.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <b>Tool access is brokered</b>
+              <p>Allowed actions run through the gateway with bounded credentials and connector-specific controls.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <b>Receipts flow back to the app</b>
+              <p>Your client can show users what happened, why it was allowed, and what was blocked.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Authority model</h2>
+          <p>
+            Agents and client apps evolve quickly. room0 stays stable underneath as the execution boundary.
+          </p>
+        </div>
+
+        <div class="diagram reveal">
           <img src="../assets/authority_substrate_diagram.svg" alt="Diagram: Autonomous agents above room0 authority substrate above machine / OS / hardware" loading="lazy">
         </div>
 
-        <div class="item reveal" style="margin-top: 14px;">
-          <h3>Brand guide</h3>
-          <p style="margin:0; color: var(--muted);">
-            Want to contribute UI/docs? The current brand guide is included in this repo:
-            <a class="link" href="../brand/Room0_Brand_Guide.pdf">Room0_Brand_Guide.pdf</a>
+        <div class="grid-2" style="margin-top: 14px;">
+          <div class="item reveal">
+            <h3>For product builders</h3>
+            <p>Ship differentiated client experiences while inheriting consistent policy, receipt, and connector governance.</p>
+          </div>
+          <div class="item reveal">
+            <h3>For collaborators</h3>
+            <p>High-leverage areas: connector boundaries, permission ergonomics, threat models, policy templates, and observability.</p>
+          </div>
+        </div>
+
+        <p class="fineprint">Current stage: active build. This page describes the platform direction and integration model for client apps.</p>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contribute</h2>
+          <p>
+            If you are building a client app on room0, share your constraints early so policy and contract decisions reflect real usage.
           </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="item reveal">
+            <h3>Platform discussion</h3>
+            <p>Discuss architecture, policy semantics, and connector governance in the platform repository.</p>
+            <p style="margin-top:10px;">
+              <a class="link" href="https://github.com/WordWorks-ai/room0-platform/discussions" target="_blank" rel="noreferrer">Open platform discussion →</a>
+            </p>
+          </div>
+
+          <div class="item reveal">
+            <h3>Design and documentation assets</h3>
+            <p>Room0 visual and messaging references are included for contributors working on docs and UI.</p>
+            <p style="margin-top:10px;">
+              <a class="link" href="../brand/Room0_Brand_Guide.pdf">Open Room0 brand guide →</a>
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -99,19 +199,20 @@
     <div class="container footer-inner">
       <div class="footer-note">
         <b>room0</b> · <span class="js-year"></span><br/>
-        Platform overview for room01.ai
+        Authority substrate for client apps
       </div>
 
       <div class="footer-links">
         <a href="../">Room01</a>
-        <a href="https://github.com/WORDWORKS-ORG/room01" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://github.com/WordWorks-ai/room0-platform" target="_blank" rel="noreferrer">room0-platform</a>
+        <a href="https://github.com/WordWorks-ai/room01-ai-landing-page" target="_blank" rel="noreferrer">Landing Page Repo</a>
       </div>
 
       <div class="copyright">
         © <span class="js-year"></span> WordWorks AI, LLC
       </div>
 
-</div>
+    </div>
   </footer>
 
   <script src="../script.js"></script>
