@@ -284,29 +284,42 @@
             <p class="fineprint">No spam. No selling your email. You can bail anytime.</p>
           </div>
 
-          <form class="card form reveal" method="post" action="https://formspree.io/f/REPLACE_ME">
+          <form
+            class="card form reveal"
+            method="post"
+            action="https://room01.substack.com/api/v1/free?nojs=true"
+            target="_blank"
+          >
+            <input type="hidden" name="source" value="external_landing_page" />
             <label>
               <span>Email</span>
               <input name="email" type="email" autocomplete="email" placeholder="you@domain.com" required />
             </label>
 
-            <label>
-              <span>Preferred channels</span>
-              <textarea name="channels" placeholder="iMessage, email, Discord, WhatsApp…"></textarea>
-            </label>
-
-            <label>
-              <span>Your first use case</span>
-              <textarea name="use_case" placeholder="Inbox triage, scheduling, research, monitoring…"></textarea>
-            </label>
-
-            <label class="checkbox">
-              <input name="collab" type="checkbox" value="yes">
-              <span>I’m open to collaborating (design, code, security, integrations)</span>
-            </label>
-
-            <button class="btn btn-primary" type="submit">Join</button>
-            <p class="fineprint">Replace the Formspree endpoint in <span class="mono">index.html</span>.</p>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+            <p class="fineprint">You will continue on Substack to complete your subscription.</p>
+            <details class="optional-note">
+              <summary>If you want: share your first use case (optional)</summary>
+              <p class="fineprint">Not required for signup.</p>
+              <p class="optional-note-links">
+                <a
+                  class="link"
+                  href="https://github.com/wordworks-ai/room01-ai-landing-page/issues/new"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open a use-case issue →
+                </a>
+                <a
+                  class="link"
+                  href="https://github.com/wordworks-ai/room01-ai-landing-page/discussions"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Start a discussion →
+                </a>
+              </p>
+            </details>
           </form>
         </div>
       </div>
