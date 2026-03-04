@@ -1,404 +1,495 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#0E1116" />
-  <title>Room01 — always-on agent appliance governed by room0</title>
-  <meta name="description" content="Room01 is a message-first Mac mini appliance for always-on personal agents. Room0 is the authority substrate: policy, tool gateway, and receipts. Vision stage — collaborators welcome." />
-  <link rel="canonical" href="https://wordworks-ai.github.io/room01-ai-landing-page/" />
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WordWorks AI — Agentic Engineering</title>
+    <meta
+      name="description"
+      content="Commit-bound, governed software systems delivered as authored assets: architecture, hardened infrastructure, deterministic bootstrap, validation, runbooks, and scope truth."
+    >
+    <meta name="theme-color" content="#05070b">
+    <meta property="og:title" content="WordWorks AI — Agentic Engineering">
+    <meta
+      property="og:description"
+      content="Governed software systems, authored and delivered to commit."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wordworks.ai/">
+    <meta property="og:image" content="https://wordworks.ai/assets/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WordWorks AI — Agentic Engineering">
+    <meta
+      name="twitter:description"
+      content="Governed software systems, authored and delivered to commit."
+    >
+    <meta name="twitter:image" content="https://wordworks.ai/assets/og-image.png">
+    <link rel="canonical" href="https://wordworks.ai/">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <meta property="og:site_name" content="Room01" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:title" content="Room01 — always-on agent appliance governed by room0" />
-  <meta property="og:description" content="Message-first Mac mini appliance for always-on agents. Room0 defines the rules, enforces the boundary, and leaves receipts." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://wordworks-ai.github.io/room01-ai-landing-page/assets/og-20260224.png" />
-  <meta property="og:image:secure_url" content="https://wordworks-ai.github.io/room01-ai-landing-page/assets/og-20260224.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:alt" content="Room01 logo and tagline for an always-on, message-first agent appliance governed by room0." />
-  <meta property="og:url" content="https://wordworks-ai.github.io/room01-ai-landing-page/" />
+    <div class="site-grid" aria-hidden="true"></div>
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Room01 — always-on agent appliance governed by room0" />
-  <meta name="twitter:description" content="Message-first Mac mini appliance for always-on agents. Room0 defines the rules, enforces the boundary, and leaves receipts." />
-  <meta name="twitter:image" content="https://wordworks-ai.github.io/room01-ai-landing-page/assets/og-20260224.png" />
-  <meta name="twitter:image:alt" content="Room01 logo and tagline for an always-on, message-first agent appliance governed by room0." />
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="#top" aria-label="WordWorks AI home">
+          <span class="brand-mark" aria-hidden="true">
+            <img class="brand-logo" src="assets/wordworks-mark-tight.png" alt="" width="898" height="412">
+          </span>
+          <span class="brand-copy">
+            <strong>WordWorks AI</strong>
+            <span>Agentic Engineering</span>
+          </span>
+        </a>
 
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-  <a class="skip" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#">
-        <span class="brand-mark" aria-hidden="true">
-          <img src="assets/room01-icon-mono-white.svg" alt="" class="brand-mark-img" loading="eager" decoding="async"/></span>
-        <span class="brand-name">room01 <span class="muted">/ room0</span></span>
-      </a>
-
-      <nav class="nav" aria-label="Primary">
-        <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks">
-          <span class="sr-only">Open menu</span>
-          <span class="burger" aria-hidden="true"></span>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle navigation</span>
         </button>
-        <div id="navlinks" class="nav-links">
-          <a href="#what">What</a>
-          <a href="#room0">Room0</a>
-          <a href="#how">How</a>
-          <a href="#collaborate">Collaborate</a>
-          <a href="#faq">FAQ</a>
-        </div>
-      </nav>
 
-      <div class="header-cta">
-        <a class="btn btn-ghost" href="#join">Join</a>
-        <a class="btn btn-primary" href="https://github.com/wordworks-ai/room01-ai-landing-page" target="_blank" rel="noreferrer">GitHub</a>
+        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+          <a href="#what-i-do">What I Do</a>
+          <a href="#engagement">How It Works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#proof">Proof</a>
+          <a class="button button--small" href="https://calendly.com/scott-caesar/30min" target="_blank" rel="noreferrer">Book a scoping call</a>
+        </nav>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main id="main">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="kicker"><span class="dot"></span> Vision stage · Built in public</p>
+    <main id="main">
+      <section class="hero section section--first">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">WORDWORKS AI / AGENTIC ENGINEERING</p>
+            <h1>Governed software systems, authored and delivered to commit.</h1>
+            <p class="lede">
+              I turn ambiguous systems work into authored, transfer-ready deliverables: architecture, hardened infrastructure,
+              deterministic bootstrap, validation suites, operational runbooks, and decision-grade documentation.
+              I author the system, the execution plan, and the acceptance boundary, then use model-assisted implementation to render the committed artifact fast.
+            </p>
 
-          <h1>Room01</h1>
+            <div class="hero-actions">
+              <a class="button" href="https://calendly.com/scott-caesar/30min" target="_blank" rel="noreferrer">Book a scoping call</a>
+              <a class="button button--ghost" href="#pricing">See delivery model</a>
+            </div>
 
-          <p class="lead">
-            A <b>message-first</b> Mac mini appliance for <b>always-on</b> personal agents.
-            You don’t open a new app — you message it through what you already use:
-            iMessage, email, Discord, WhatsApp.
-          </p>
+            <ul class="signal-list" aria-label="Key positioning points">
+              <li>Commit-bound delivery</li>
+              <li>Implemented vs planned is explicit</li>
+              <li>Security and governance from day one</li>
+              <li>Deliverables over hours</li>
+            </ul>
 
-          <p class="lead">
-            Under the hood, <b>room0</b> is the authority substrate:
-            it defines policies, brokers tool access, and produces receipts.
-          </p>
+            <div class="note-card">
+              <img class="note-card__logo" src="assets/wordworks-mark-tight.png" alt="" width="898" height="412" loading="lazy">
+              <p class="method-note">
+                <strong>Operator note:</strong>
+                I author the system boundary, architecture, and execution plan. Model-assisted implementation using Codex, ChatGPT Pro,
+                and Claude Code compresses delivery time. The deliverable is the system asset package — not access to the tools, and not manual keyboard hours.
+              </p>
+            </div>
 
-          <p class="tagline">
-            <b>Define the rules.</b> <span style="color: var(--muted2);">Enforce the boundary. Authority at the substrate.</span>
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#join">Join the build list</a>
-            <a class="btn btn-ghost" href="room0/">Read Room0 overview</a>
+            <p class="cred-line">20+ years in enterprise software. Developer → Director of Cloud &amp; Innovation. Built net-new solutions inside enterprise constraints.</p>
           </div>
 
-          <p class="fineprint">
-            Not for sale. This is an experiment to validate demand and recruit collaborators.
-          </p>
-        </div>
+          <aside class="artifact-panel artifact-panel--brand" aria-label="Representative delivery artifact">
+            <div class="artifact-watermark" aria-hidden="true">
+              <img src="assets/wordworks-mark-tight.png" alt="" width="898" height="412" loading="lazy">
+            </div>
 
-        <div class="card reveal" role="region" aria-label="Example message-first interaction">
-          <div class="card-inner">
-            <div class="pill">Example <span class="mono">iMessage</span></div>
-            <div class="hr"></div>
+            <div class="artifact-panel__chrome">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
 
-            <div class="thread" aria-label="Example conversation">
-              <div class="bubble bubble-you">
-                <div class="bubble-meta">You</div>
-                <div class="bubble-text">Room01 — summarize this thread and draft a reply. Draft only.</div>
+            <div class="artifact-panel__body">
+              <div class="artifact-header">
+                <p class="terminal-label">/snapshot-transfer</p>
+                <span class="status status--accent">commit-bound</span>
               </div>
 
-              <div class="bubble bubble-room">
-                <div class="bubble-meta">Room01</div>
-                <div class="bubble-text">
-                  I’ll summarize the thread, draft two reply options, and show them before anything is sent.
+              <div class="artifact-meta">
+                <div>
+                  <p class="artifact-meta__label">transfer package</p>
+                  <p class="artifact-meta__value">coherent authored system state</p>
+                </div>
+                <div>
+                  <p class="artifact-meta__label">acceptance</p>
+                  <p class="artifact-meta__value">scope truth enforced by tests</p>
                 </div>
               </div>
+
+              <div class="artifact-columns">
+                <div class="artifact-block artifact-block--implemented">
+                  <p class="artifact-block__title"><span class="status status--implemented">implemented now</span></p>
+                  <ul>
+                    <li>Caddy, API, worker</li>
+                    <li>Postgres, Redis, MinIO</li>
+                    <li>Vault, ClamAV, backup</li>
+                    <li>Bootstrap automation</li>
+                    <li>Health checks</li>
+                  </ul>
+                </div>
+
+                <div class="artifact-block artifact-block--planned">
+                  <p class="artifact-block__title"><span class="status status--planned">planned next</span></p>
+                  <ul>
+                    <li>Auth runtime</li>
+                    <li>File runtime</li>
+                    <li>Share runtime</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="artifact-footer">
+                <p class="artifact-note">Included in boundary</p>
+                <ul class="artifact-tags">
+                  <li>restore-smoke</li>
+                  <li>hardening controls</li>
+                  <li>runbooks</li>
+                  <li>governance / legal</li>
+                </ul>
+              </div>
             </div>
+          </aside>
+        </div>
+      </section>
 
-            <div class="mini" aria-label="Policy and receipt">
-              <div class="mini-row">
-                <div class="mini-label">Tools</div>
-                <div class="mini-value mono">email.read · email.draft</div>
-              </div>
-              <div class="mini-row">
-                <div class="mini-label">Policy</div>
-                <div class="mini-value"><span class="pill" style="padding:4px 10px;">Ask</span> Preview before execute</div>
-              </div>
-              <div class="mini-row">
-                <div class="mini-label">Receipt</div>
-                <div class="mini-value mono">a9f1c3e7</div>
-              </div>
-            </div>
-
-            <p class="fineprint" style="margin-top:12px;">
-              Most interaction is message-first. An admin console exists for advanced configuration — optional.
-            </p>
+      <section class="proof-strip" aria-label="Commercial model highlights">
+        <div class="container proof-strip__grid">
+          <div class="proof-strip__item">
+            <span class="proof-strip__label">Commercial model</span>
+            <strong>Authored deliverables</strong>
+          </div>
+          <div class="proof-strip__item">
+            <span class="proof-strip__label">Default mode</span>
+            <strong>No staff aug</strong>
+          </div>
+          <div class="proof-strip__item">
+            <span class="proof-strip__label">Scope rule</span>
+            <strong>Implemented ≠ planned</strong>
+          </div>
+          <div class="proof-strip__item">
+            <span class="proof-strip__label">Hourly access</span>
+            <strong>Emergency only</strong>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="what" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>What it is</h2>
-          <p>
-            Room01 is the client experience. Room0 is the platform underneath.
-            Together, they aim to make powerful agents safer to run — without killing usefulness.
-          </p>
-        </div>
-
-        <div class="grid">
-          <div class="item reveal">
-            <h3>Always-on appliance</h3>
-            <p>A dedicated Mac mini you plug in and leave running 24/7.</p>
-          </div>
-          <div class="item reveal">
-            <h3>Message-first interface</h3>
-            <p>Use the channels you already live in. No “assistant app” required.</p>
-          </div>
-          <div class="item reveal">
-            <h3>Governed tool access</h3>
-            <p>Policies + receipts live in room0 — so you can inspect and revoke.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="room0" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Room0: authority substrate for autonomous systems</h2>
-          <p>
-            Room0 is intentionally boring. It’s where the rules live — and where tool access is enforced.
-            The goal: fail closed by default, with clear boundaries.
-          </p>
-        </div>
-
-        <div class="grid-2">
-          <div class="item reveal">
-            <h3>Room01 sits inside Room0</h3>
+      <section id="what-i-do" class="section">
+        <div class="container section-grid">
+          <div class="section-copy">
+            <p class="eyebrow">What I do</p>
+            <h2>I do not sell staff augmentation. I sell authored system assets with a declared boundary and a clean handoff.</h2>
             <p>
-              Room01 handles messaging, routing, and the user experience.
-              Room0 handles policy, tool gateway, receipts, and governance.
-            </p>
-            <p style="margin-top:10px;">
-              <a class="link" href="room0/">Read the Room0 overview →</a>
+              Most of the leverage is in design, sequencing, technology choice, control points, and acceptance criteria.
+              That is the work. The implementation path is model-assisted, but the thing you are buying is a coherent software artifact package you can inspect,
+              transfer, and extend without guessing what is real.
             </p>
           </div>
 
-          <div class="item reveal">
-            <h3>Core principles</h3>
-            <p style="margin:0 0 6px;"><b>Define the rules.</b></p>
-            <p style="margin:0 0 6px;"><b>Enforce the boundary.</b></p>
-            <p style="margin:0;"><b>Authority at the substrate.</b></p>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Architecture</h3>
+              <p>System design, constraints, and technical approach written for real execution, not slideware.</p>
+            </article>
+            <article class="card">
+              <h3>Hardened Infrastructure</h3>
+              <p>Security-first platform scaffolding and operating controls from day one.</p>
+            </article>
+            <article class="card">
+              <h3>Deterministic Bootstrap</h3>
+              <p>Repeatable bring-up, automation, and environment coherence you can trust.</p>
+            </article>
+            <article class="card">
+              <h3>Validation Suites</h3>
+              <p>Health checks, restore-smoke, and tests that enforce scope truth at the delivery boundary.</p>
+            </article>
+            <article class="card">
+              <h3>Runbooks</h3>
+              <p>Operational guidance for handoff, oversight, and downstream execution.</p>
+            </article>
+            <article class="card">
+              <h3>Governance / Scope Truth</h3>
+              <p>Explicit separation between what is implemented now, planned next, and out of scope.</p>
+            </article>
           </div>
         </div>
+      </section>
 
-        <div class="diagram reveal" aria-label="Authority substrate diagram">
-          <img src="assets/authority_substrate_diagram.svg" alt="Diagram: Autonomous agents above room0 authority substrate above machine / OS / hardware" loading="lazy">
-        </div>
-      </div>
-    </section>
-
-    <section id="how" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>How it works</h2>
-          <p>
-            A simple contract: intent is visible, access is scoped, and actions leave receipts.
-          </p>
-        </div>
-
-        <div class="steps">
-          <div class="step reveal">
-            <div class="step-num">1</div>
-            <div class="step-body">
-              <b>You message Room01</b>
-              <p>“Draft this.” “Schedule that.” “Monitor this.” “Summarize that.”</p>
-            </div>
-          </div>
-
-          <div class="step reveal">
-            <div class="step-num">2</div>
-            <div class="step-body">
-              <b>The agent proposes an action</b>
-              <p>Room01 makes the plan and tool requests explicit: what it wants to do, and why.</p>
-            </div>
-          </div>
-
-          <div class="step reveal">
-            <div class="step-num">3</div>
-            <div class="step-body">
-              <b>Room0 enforces policy</b>
-              <p>Ask / allow / block — and produce a receipt you can audit later.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="collaborate" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Collaborate</h2>
-          <p>
-            If this idea resonates, participation is the best signal. Even “here’s my use case” helps.
-          </p>
-        </div>
-
-        <div class="grid-2">
-          <div class="item reveal">
-            <h3>Share your use case</h3>
-            <p>What would you trust a 24/7 agent to do if it had boundaries and receipts?</p>
-            <p style="margin-top:10px;">
-              <a
-                class="link"
-                href="https://room01.substack.com/chat?utm_source=room01_site&utm_medium=cta&utm_campaign=share_use_case"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Open the Substack chat →
-              </a>
-            </p>
-          </div>
-
-          <div class="item reveal">
-            <h3>Contribute policy + security thinking</h3>
-            <p>Connector boundaries, permission ergonomics, threat models, and receipt formats.</p>
-            <p style="margin-top:10px;">
-              <a
-                class="link"
-                href="https://room01.substack.com/chat?utm_source=room01_site&utm_medium=cta&utm_campaign=policy_security"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Start the Substack discussion →
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="join" class="section">
-      <div class="container">
-        <div class="join">
-          <div class="section-head" style="margin-bottom:0;">
-            <h2>Join the build list</h2>
+      <section id="engagement" class="section section--tint">
+        <div class="container">
+          <div class="section-heading section-heading--narrow">
+            <p class="eyebrow">How engagement works</p>
+            <h2>Buy a delivery boundary, not an open loop.</h2>
             <p>
-              Occasional updates, RFC drops, and invites to early pilots if this becomes real.
-              Collaborators will be first to know if we explore funding paths.
+              The process is direct: scope the problem, set the commit boundary, author the system, validate it, and transfer it.
+              If there is a next phase, it becomes its own scoped tranche.
             </p>
-            <p class="fineprint">No spam. No selling your email. You can bail anytime.</p>
           </div>
 
-          <form
-            class="card form reveal"
-            method="post"
-            action="https://room01.substack.com/api/v1/free?nojs=true"
-            target="_blank"
-          >
-            <input type="hidden" name="source" value="external_landing_page" />
-            <label>
-              <span>Email</span>
-              <input name="email" type="email" autocomplete="email" placeholder="you@domain.com" required />
-            </label>
+          <ol class="timeline">
+            <li class="timeline__item">
+              <div class="timeline__step">01</div>
+              <div class="timeline__body">
+                <h3>Scope the problem</h3>
+                <p>Define the operating problem, constraints, security posture, and what a useful transfer actually needs to contain.</p>
+              </div>
+            </li>
+            <li class="timeline__item timeline__item--emphasis">
+              <div class="timeline__step">02</div>
+              <div class="timeline__body">
+                <h3>Set the commit boundary</h3>
+                <p>Write down what is implemented now, what is planned next, and what is excluded. If the work cannot be bounded honestly, it is not sold as fixed.</p>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <div class="timeline__step">03</div>
+              <div class="timeline__body">
+                <h3>Author and render</h3>
+                <p>I choose the architecture, technologies, sequence, and controls, then drive model-assisted implementation against that authored plan.</p>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <div class="timeline__step">04</div>
+              <div class="timeline__body">
+                <h3>Validate and harden</h3>
+                <p>Bootstrap, health checks, backup / restore-smoke, operational controls, and documentation are part of delivery. They are not deferred polish.</p>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <div class="timeline__step">05</div>
+              <div class="timeline__body">
+                <h3>Transfer or tranche forward</h3>
+                <p>You receive the authored assets and explicit scope truth. If another block of work makes sense, it is priced and committed separately.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
 
-            <button class="btn btn-primary" type="submit">Subscribe</button>
-            <p class="fineprint">You will continue on Substack to complete your subscription.</p>
-            <details class="optional-note">
-              <summary>If you want: share your first use case (optional)</summary>
-              <p class="fineprint">Not required for signup.</p>
-              <p class="optional-note-links">
-                <a
-                  class="link"
-                  href="https://room01.substack.com/chat?utm_source=room01_site&utm_medium=cta&utm_campaign=optional_use_case"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Share a use case in chat →
-                </a>
-                <a
-                  class="link"
-                  href="https://room01.substack.com/chat?utm_source=room01_site&utm_medium=cta&utm_campaign=optional_policy_security"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Share policy/security ideas in chat →
-                </a>
-              </p>
-            </details>
-          </form>
+      <section id="pricing" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Offerings &amp; pricing</p>
+            <h2>Pricing reflects authored assets, execution certainty, and risk removed — not keystrokes sold.</h2>
+            <p>Snapshot transfer is the anchor. Tranches extend the system in discrete, defensible blocks. Hourly access exists only when urgency warrants it.</p>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="pricing-card pricing-card--featured">
+              <p class="pricing-card__tag">Anchor offer</p>
+              <h3>Commit-Bound Snapshot Transfer</h3>
+              <p class="pricing-card__price">$40k–$70k <span>anchor $59k</span></p>
+              <p class="pricing-card__summary">Best when you need a serious system foundation transferred fast.</p>
+              <div class="pricing-card__group">
+                <p class="pricing-card__label">What this is</p>
+                <ul>
+                  <li>A coherent system state at a declared boundary</li>
+                  <li>Architecture, hardened scaffold, bootstrap, validation, runbooks, and governance package</li>
+                  <li>Clean handoff with explicit implemented-now vs planned-next truth</li>
+                </ul>
+              </div>
+              <div class="pricing-card__group pricing-card__group--muted">
+                <p class="pricing-card__label">What this is not</p>
+                <ul>
+                  <li>A code dump</li>
+                  <li>Open-ended development time</li>
+                  <li>Implied runtime capability beyond the committed boundary</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="pricing-card">
+              <h3>Fixed-Scope Authored Tranches</h3>
+              <p class="pricing-card__price">$35k–$90k <span>per tranche</span></p>
+              <p class="pricing-card__summary">Best when the system should advance in ordered blocks without pretending the whole roadmap is already committed.</p>
+              <div class="pricing-card__group">
+                <p class="pricing-card__label">What this is</p>
+                <ul>
+                  <li>Each tranche has an explicit boundary and acceptance signals</li>
+                  <li>Real movement with controlled risk and clean sequencing</li>
+                  <li>A practical path to extend the system without blurring scope truth</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="pricing-card">
+              <h3>Emergency Direct Access</h3>
+              <p class="pricing-card__price">$600–$1,000/hr <span>prepaid block</span></p>
+              <p class="pricing-card__summary">For incident pressure, architecture deadlocks, security or governance triage, and compressed executive decision windows.</p>
+              <div class="pricing-card__group">
+                <p class="pricing-card__label">Terms</p>
+                <ul>
+                  <li>Prepaid minimum block</li>
+                  <li>Urgency and off-hours multipliers apply</li>
+                  <li>The only hourly access model — and not the default way to buy</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="faq-grid" aria-label="Buying notes">
+            <article class="faq-card">
+              <p class="pricing-card__label">What you receive</p>
+              <h3>Transfer-ready authored assets</h3>
+              <p>Architecture, hardening, bootstrap, validation, runbooks, and explicit scope truth at transfer.</p>
+            </article>
+            <article class="faq-card">
+              <p class="pricing-card__label">After transfer</p>
+              <h3>You own a coherent starting state</h3>
+              <p>Take the authored state in-house, hand it to your team, or scope the next tranche without muddying what is already real.</p>
+            </article>
+            <article class="faq-card">
+              <p class="pricing-card__label">Why not hourly?</p>
+              <h3>Because typing time is not the product</h3>
+              <p>Hourly access exists for emergencies. The default is authored delivery because that is what creates a defensible asset.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="fit" class="section section--tint">
+        <div class="container">
+          <div class="section-heading section-heading--narrow">
+            <p class="eyebrow">Who this is for / not for</p>
+            <h2>Qualified buyers self-select quickly here.</h2>
+          </div>
+
+          <div class="split-grid">
+            <article class="split-card split-card--good">
+              <h3>This is for</h3>
+              <ul>
+                <li>Founders, CTOs, and operators who need serious systems work moved from ambiguity into a governed starting state</li>
+                <li>Buyers who value transfer-ready assets more than access time</li>
+                <li>Teams that want security, validation, and governance from day one</li>
+                <li>People who want explicit scope truth in a technical diligence call</li>
+              </ul>
+            </article>
+
+            <article class="split-card split-card--bad">
+              <h3>This is not for</h3>
+              <ul>
+                <li>Anyone looking for embedded manual development or bargain hourly coding</li>
+                <li>Teams that want vague exploration sold as production delivery</li>
+                <li>Buyers who expect unlimited access inside a fixed fee</li>
+                <li>Anyone who wants product capabilities implied before they exist</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="proof" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Proof of work</p>
+            <h2>Representative delivery: hardened Phase 0/1 secure-file platform scaffold.</h2>
+            <p>Proof should show implemented components, explicit non-implemented scope, and the controls used to keep those two states separate.</p>
+          </div>
+
+          <div class="proof-case">
+            <div class="proof-case__main">
+              <div class="proof-columns">
+                <article class="proof-panel proof-panel--implemented">
+                  <p class="proof-panel__label">Implemented now</p>
+                  <ul>
+                    <li>Hardened Phase 0/1 secure-file platform scaffold</li>
+                    <li>Deterministic local orchestration for Caddy, API, worker, Postgres, Redis, MinIO, Vault, ClamAV, and backup</li>
+                    <li>Bootstrap automation</li>
+                    <li>Health checks</li>
+                    <li>Backup + restore-smoke coverage</li>
+                    <li>Hardening controls</li>
+                    <li>Governance / legal package</li>
+                  </ul>
+                </article>
+
+                <article class="proof-panel proof-panel--planned">
+                  <p class="proof-panel__label">Planned next / explicitly not implemented yet</p>
+                  <ul>
+                    <li>Auth runtime</li>
+                    <li>File runtime</li>
+                    <li>Share runtime</li>
+                  </ul>
+                  <p class="proof-panel__note">Implemented and planned are different states. The artifact, tests, and handoff keep them different.</p>
+                </article>
+              </div>
+            </div>
+
+            <aside class="proof-case__side card card--dense">
+              <h3>Validation and transfer cues</h3>
+              <ul class="check-list">
+                <li>Tests enforce scope accuracy</li>
+                <li>Operational runbooks included</li>
+                <li>Security and governance posture declared up front</li>
+                <li>Boundary is transfer-ready, not presentation-ready only</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <div class="objection-card">
+            <p class="eyebrow">Why this pricing?</p>
+            <h2>You are not buying hours or raw typing time.</h2>
+            <p>
+              You are buying an authored system state with explicit boundaries, hardened foundations, validation, operational guidance, and clean transfer.
+              That changes the economics. It compresses time, reduces rework, lowers security and governance risk, and gives downstream teams something coherent to extend.
+              The asset remains after the engagement. The value is in the system quality and the delivery certainty.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-section">
+        <div class="container">
+          <div class="cta-card">
+            <p class="eyebrow">Scoping call</p>
+            <h2>If you need the system authored and transferred, start here.</h2>
+            <p>
+              Bring the problem, constraints, timeline, and budget.
+              I will tell you quickly whether this should be a snapshot transfer, a fixed-scope tranche, or a no.
+            </p>
+            <div class="hero-actions hero-actions--center">
+              <a class="button" href="https://calendly.com/scott-caesar/30min" target="_blank" rel="noreferrer">Book a scoping call</a>
+              <a class="button button--ghost" href="#proof">Review proof of work</a>
+            </div>
+            <p class="cta-footnote">Best for buyers with decision authority, technical ownership, and budget for serious systems work.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div class="footer-brand-group">
+          <span class="footer-logo-wrap" aria-hidden="true">
+            <img class="footer-logo" src="assets/wordworks-mark-tight.png" alt="" width="898" height="412" loading="lazy">
+          </span>
+          <div>
+            <p class="footer-brand">WordWorks AI</p>
+            <p class="footer-copy">Agentic engineering for governed, commit-bound software delivery.</p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#what-i-do">What I Do</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#proof">Proof</a>
+          <a href="https://calendly.com/scott-caesar/30min" target="_blank" rel="noreferrer">Scoping call</a>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <section id="faq" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>FAQ</h2>
-        </div>
-
-        <div class="grid-2">
-          <div class="item reveal">
-            <details>
-              <summary>Is this a product I can buy today?</summary>
-              <p>No — this is a vision-stage experiment. If it becomes real, early collaborators and build-list folks will hear first.</p>
-            </details>
-          </div>
-
-          <div class="item reveal">
-            <details>
-              <summary>Do I need to install a new app?</summary>
-              <p>The intention is no. Room01 is message-first. An admin console exists for advanced configuration — optional.</p>
-            </details>
-          </div>
-
-          <div class="item reveal">
-            <details>
-              <summary>What’s the difference between room0 and room01?</summary>
-              <p><b>room0</b> is the governance kernel (policy, tool gateway, receipts). <b>room01</b> is the client experience running on top.</p>
-            </details>
-          </div>
-
-          <div class="item reveal">
-            <details>
-              <summary>Why a dedicated Mac mini?</summary>
-              <p>A stable always-on runtime, a predictable environment, and a smaller blast radius than your daily computer.</p>
-            </details>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-note">
-        <b>room01.ai</b> · <span class="js-year"></span><br/>
-        Room01 is a concept. Room0 is the platform vision. Built in public.
-      </div>
-
-      <div class="footer-links">
-        <a href="room0/">Room0</a>
-        <a href="https://github.com/wordworks-ai/room01-ai-landing-page" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="#join">Build list</a>
-      </div>
-
-      <div class="copyright">
-        © <span class="js-year"></span> WordWorks AI, LLC
-      </div>
-
-</div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
