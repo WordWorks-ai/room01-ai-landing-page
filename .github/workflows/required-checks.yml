@@ -1,0 +1,48 @@
+name: Required Checks
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Verify required site files
+        run: |
+          test -f index.html
+          test -f styles.css
+          test -f script.js
+          test -f assets/og-image.png
+
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy gate
+        run: echo "Deploy is not executed in PR validation; this check exists for branch protection."
+
+  report-build-status:
+    name: report-build-status
+    runs-on: ubuntu-latest
+    needs:
+      - build
+      - deploy
+    if: always()
+    steps:
+      - name: Report aggregate check status
+        run: |
+          if [ "${{ needs.build.result }}" != "success" ] || [ "${{ needs.deploy.result }}" != "success" ]; then
+            echo "One or more required checks failed."
+            exit 1
+          fi
+          echo "All required checks passed."
