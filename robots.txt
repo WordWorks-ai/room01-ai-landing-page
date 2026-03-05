@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wordworks.ai/sitemap.xml
+Sitemap: https://room01.ai/sitemap.xml
